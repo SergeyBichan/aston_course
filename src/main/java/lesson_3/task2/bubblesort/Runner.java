@@ -16,6 +16,7 @@ public class Runner {
 
     }
 
+    //test for git
     // Метод для сортировки массива пузырьком
     public static void bubbleSort(int[] array) {
         if (checkIfSorted(array)) {
