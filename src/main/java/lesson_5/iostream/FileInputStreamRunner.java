@@ -61,4 +61,19 @@ public class FileInputStreamRunner {
             System.out.println(ex.getMessage());
         }
     }
+
+    private static void readEachByteByNio() {
+        Path filePath = Paths.get("resources/text.txt");
+        try (var inputStream = Files.newInputStream(filePath)) {
+            byte[] bytes = new byte[1024];
+            StringBuilder stringBuilder = new StringBuilder();
+            int bytesRead;
+            while ((bytesRead = inputStream.read(bytes))!= -1) {
+                stringBuilder.append(new String(bytes, 0, bytesRead));
+            }
+            System.out.println(stringBuilder.toString());
+        } catch (IOException ex) {
+            System.err.println("An error occurred while reading the file: " + ex.getMessage());
+        }
+    }
 }
