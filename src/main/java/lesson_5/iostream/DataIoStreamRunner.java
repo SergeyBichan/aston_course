@@ -1,6 +1,10 @@
 package lesson_5.iostream;
 
 import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
@@ -51,25 +55,23 @@ public class DataIoStreamRunner {
     //using nio
 
     private static void readDataFromFileByNio() {
-        //TODO
-//        try (FileChannel channel = new FileInputStream("src/text5.txt").getChannel()) {
-//            ByteBuffer buffer = ByteBuffer.allocate(1024);
-//            channel.read(buffer);
-//            buffer.flip();
-//            String name = buffer.
-//            CharBuffer charBuffer = Charset.defaultCharset().decode(buffer);
-//            String str = charBuffer.toString();
-//            int age = buffer.getInt();
-//            double height = buffer.getDouble();
-//            boolean married = buffer.get() == 1;
-//            System.out.println("\nREADING..");
-//            String name = str.
-//            System.out.println("READED");
-//            System.out.printf("Name: %s  Age: %d  Height: %f  Married: %b",
-//                    name, age, height, married);
-//        } catch (IOException ex) {
-//            System.out.println(ex.getMessage());
-//        }
+
+        try (FileChannel channel = new FileInputStream("src/text6.txt").getChannel()) {
+            ByteBuffer buffer = ByteBuffer.allocate(1024);
+            channel.read(buffer);
+            buffer.flip();
+            CharBuffer charBuffer = Charset.defaultCharset().decode(buffer);
+            String str = charBuffer.toString();
+            String[] tom = str.split(" ");
+            String name = tom[1];
+            int age = Integer.parseInt(tom[3]);
+            double height = Double.parseDouble(tom[5]);
+            boolean married = Boolean.parseBoolean(tom[7]);
+            System.out.printf("\nName: %s  Age: %d  Height: %f  Married: %b",
+                    name, age, height, married);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     private static void writeDataToFileByUsingNio(Person person) {
