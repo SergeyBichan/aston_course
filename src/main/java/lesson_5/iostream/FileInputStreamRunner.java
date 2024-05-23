@@ -2,12 +2,16 @@ package lesson_5.iostream;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class FileInputStreamRunner {
     public static void main(String[] args) {
 //        readEachByte();
 //        System.out.println("--------------------");
         readAllBytes();
+        readAllBytesByNio();
 
     }
 
@@ -43,6 +47,17 @@ public class FileInputStreamRunner {
             System.out.println(stringValue);
         } catch (IOException ex) {
 
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    private static void readAllBytesByNio() {
+        Path filePath = Paths.get("resources/text.txt");
+        try {
+            byte[] bytes = Files.readAllBytes(filePath);
+            String stringValue = new String(bytes);
+            System.out.println(stringValue);
+        } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
     }
