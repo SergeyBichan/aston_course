@@ -4,6 +4,8 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
+src/data.bin
+src/text6.txt
 .idea
 logs/
 .idea/modules.xml

@@ -22,7 +22,7 @@ public class DataIoStreamRunner {
         // обратное считывание из файла
         readDataFromFile();
 
-//        readDataFromFileByNio();
+        readDataFromFileByNio();
         writeDataToFileByUsingNio(tom);
     }
 
@@ -58,23 +58,19 @@ public class DataIoStreamRunner {
     //TODO
     private static void readDataFromFileByNio() {
 
-        try (FileChannel channel = new FileInputStream("src/text5.txt").getChannel()) {
+        try (FileChannel channel = new FileInputStream("src/text6.txt").getChannel()) {
             ByteBuffer buffer = ByteBuffer.allocate(1024);
             channel.read(buffer);
             buffer.flip();
-//            String name = buffer.
             CharBuffer charBuffer = Charset.defaultCharset().decode(buffer);
             String str = charBuffer.toString();
             String[] tom = str.split(" ");
-            System.out.println(Arrays.toString(tom));
-//            int age = buffer.getInt();
-//            double height = buffer.getDouble();
-//            boolean married = buffer.get() == 1;
-//            System.out.println("\nREADING..");
-////            String name = str.
-//            System.out.println("READED");
-//            System.out.printf("Name: %s  Age: %d  Height: %f  Married: %b",
-//                    name, age, height, married);
+            String name = tom[1];
+            int age = Integer.parseInt(tom[3]);
+            double height = Double.parseDouble(tom[5]);
+            boolean married = Boolean.parseBoolean(tom[7]);
+            System.out.printf("\nName: %s  Age: %d  Height: %f  Married: %b",
+                    name, age, height, married);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
