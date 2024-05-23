@@ -22,7 +22,7 @@ public class DataIoStreamRunner {
         // обратное считывание из файла
         readDataFromFile();
 
-        readDataFromFileByNio();
+//        readDataFromFileByNio();
         writeDataToFileByUsingNio(tom);
     }
 
@@ -54,27 +54,6 @@ public class DataIoStreamRunner {
     }
 
     //using nio
-
-    //TODO
-    private static void readDataFromFileByNio() {
-
-        try (FileChannel channel = new FileInputStream("src/text6.txt").getChannel()) {
-            ByteBuffer buffer = ByteBuffer.allocate(1024);
-            channel.read(buffer);
-            buffer.flip();
-            CharBuffer charBuffer = Charset.defaultCharset().decode(buffer);
-            String str = charBuffer.toString();
-            String[] tom = str.split(" ");
-            String name = tom[1];
-            int age = Integer.parseInt(tom[3]);
-            double height = Double.parseDouble(tom[5]);
-            boolean married = Boolean.parseBoolean(tom[7]);
-            System.out.printf("\nName: %s  Age: %d  Height: %f  Married: %b",
-                    name, age, height, married);
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
 
     private static void writeDataToFileByUsingNio(Person person) {
         Path path = Paths.get("src/text6.txt");
