@@ -1,6 +1,5 @@
-package ru.aston.java.base.lesson7.concurrency.callablefuture.completablefuture;
+package concurrency.callablefuture.completablefuture;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.executors;
+package concurrency.executors;
 
 import ru.aston.java.base.lesson7.concurrency.executors.task.GenerateRandomIntegerTask;
 
