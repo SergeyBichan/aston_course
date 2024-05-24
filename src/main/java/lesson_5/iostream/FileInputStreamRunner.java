@@ -12,6 +12,7 @@ public class FileInputStreamRunner {
 //        System.out.println("--------------------");
         readAllBytes();
         readAllBytesByNio();
+        readEachByteByNio();
 
     }
 
