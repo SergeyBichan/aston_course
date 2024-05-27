@@ -1,7 +1,7 @@
-package ru.aston.java.base.lesson7.concurrency.synchronization.exchanger;
+package concurrency.synchronization.exchanger;
 
-import ru.aston.java.base.lesson7.concurrency.synchronization.exchanger.model.PingWorker;
-import ru.aston.java.base.lesson7.concurrency.synchronization.exchanger.model.PongWorker;
+import concurrency.synchronization.exchanger.model.PingWorker;
+import concurrency.synchronization.exchanger.model.PongWorker;
 
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.atomic.AtomicInteger;

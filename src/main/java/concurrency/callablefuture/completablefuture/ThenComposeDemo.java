@@ -1,8 +1,8 @@
-package ru.aston.java.base.lesson7.concurrency.callablefuture.completablefuture;
+package concurrency.callablefuture.completablefuture;
 
-import ru.aston.java.base.lesson7.concurrency.callablefuture.completablefuture.model.CreditRatingService;
-import ru.aston.java.base.lesson7.concurrency.callablefuture.completablefuture.model.User;
-import ru.aston.java.base.lesson7.concurrency.callablefuture.completablefuture.model.UserService;
+import concurrency.callablefuture.completablefuture.model.CreditRatingService;
+import concurrency.callablefuture.completablefuture.model.User;
+import concurrency.callablefuture.completablefuture.model.UserService;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

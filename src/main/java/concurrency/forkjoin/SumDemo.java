@@ -1,6 +1,5 @@
-package ru.aston.java.base.lesson7.concurrency.forkjoin;
+package concurrency.forkjoin;
 
-import ru.aston.java.base.lesson7.concurrency.forkjoin.model.SumTask;
 
 import java.util.concurrent.ForkJoinPool;
 

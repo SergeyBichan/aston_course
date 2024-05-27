@@ -1,7 +1,6 @@
-package ru.aston.java.base.lesson7.concurrency.executors;
+package concurrency.executors;
 
-import ru.aston.java.base.lesson7.concurrency.executors.task.GenerateRandomIntegerWithIdTask;
-
+import concurrency.executors.task.GenerateRandomIntegerWithIdTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

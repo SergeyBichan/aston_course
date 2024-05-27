@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.synchronization.cas;
+package concurrency.synchronization.cas;
 
 public class LongDemo {
     private static Long longCounter = 0L;

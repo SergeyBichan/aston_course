@@ -1,6 +1,5 @@
-package ru.aston.java.base.lesson7.concurrency.executors;
+package concurrency.executors;
 
-import ru.aston.java.base.lesson7.concurrency.executors.task.GenerateRandomIntegerTask;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

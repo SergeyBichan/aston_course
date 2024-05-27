@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.synchronization.base;
+package concurrency.synchronization.base;
 
 public class    IncrementCounterUnsafeDemo {
     static Integer counter = 0;

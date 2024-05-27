@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.callablefuture;
+package concurrency.callablefuture;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class FixedThreadPoolCallableDemo {
         long start = System.currentTimeMillis();
         try (ExecutorService executorService = Executors.newFixedThreadPool(cores * 100)) {
             for (int i = 0; i < 10000; i++) {
-                futures.add(executorService.submit(new GenerateRandomIntegerCallableTask()));
+                futures.add(executorService.submit(new ru.aston.java.base.lesson7.concurrency.callablefuture.GenerateRandomIntegerCallableTask()));
             }
         }
         System.out.println("Get Result");

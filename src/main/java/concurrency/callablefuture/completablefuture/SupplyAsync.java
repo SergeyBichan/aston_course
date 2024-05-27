@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.callablefuture.completablefuture;
+package concurrency.callablefuture.completablefuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

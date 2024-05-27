@@ -1,6 +1,8 @@
-package ru.aston.java.base.lesson7.concurrency.forkjoin;
+package concurrency.forkjoin;
 
-import ru.aston.java.base.lesson7.concurrency.forkjoin.model.DivideNumberAction;
+
+
+import concurrency.forkjoin.model.DivideNumberAction;
 
 import java.util.concurrent.ForkJoinPool;
 

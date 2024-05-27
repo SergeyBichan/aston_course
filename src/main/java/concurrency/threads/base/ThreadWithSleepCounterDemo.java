@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.threads.base;
+package concurrency.threads.base;
 
 import ru.aston.java.base.lesson7.concurrency.threads.base.worker.ThreadWithSleepCounterWorker;
 

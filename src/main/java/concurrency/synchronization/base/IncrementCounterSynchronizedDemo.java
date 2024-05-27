@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.synchronization.base;
+package concurrency.synchronization.base;
 
 public class IncrementCounterSynchronizedDemo {
     static Integer counter = 0;

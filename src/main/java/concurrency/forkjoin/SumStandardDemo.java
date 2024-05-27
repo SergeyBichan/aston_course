@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.forkjoin;
+package concurrency.forkjoin;
 
 
 public class SumStandardDemo {

@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.threads.base.worker;
+package concurrency.threads.base.worker;
 
 public class ThreadCounterWorker extends Thread {
     private final String name;

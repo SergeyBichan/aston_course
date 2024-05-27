@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.forkjoin.model;
+package concurrency.forkjoin.model;
 
 import java.util.concurrent.RecursiveTask;
 

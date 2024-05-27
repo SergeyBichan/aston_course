@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.executors.task;
+package concurrency.executors.task;
 
 import java.util.Random;
 

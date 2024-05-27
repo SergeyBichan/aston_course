@@ -1,6 +1,7 @@
-package ru.aston.java.base.lesson7.concurrency.threads.base;
+package concurrency.threads.base;
 
-import ru.aston.java.base.lesson7.concurrency.threads.base.worker.RunnableCounterWorker;
+import concurrency.threads.base.worker.RunnableCounterWorker;
+
 
 public class RunnableCounterDemo {
     public static void main(String[] args) {

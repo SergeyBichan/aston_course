@@ -1,4 +1,4 @@
-package ru.aston.java.base.lesson7.concurrency.synchronization.exchanger.model;
+package concurrency.synchronization.exchanger.model;
 
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.atomic.AtomicInteger;
